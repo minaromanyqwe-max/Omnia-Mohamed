@@ -249,6 +249,85 @@ const StyledWrapper = styled.div`
     font-weight: 500;
     line-height: 1.4;
   }
+
+  @media (max-width: 600px) {
+    padding: 16px;
+
+    .profile-container {
+      max-width: 100%;
+      margin-top: 40px;
+      gap: 18px;
+    }
+
+    .profile-card {
+      padding: 20px;
+      border-radius: 24px;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    .coach-avatar {
+      width: 100px;
+      height: 100px;
+    }
+
+    .info-section h2 {
+      font-size: 20px;
+    }
+
+    .info-section .bio-text {
+      font-size: 12px;
+    }
+
+    .credentials-section {
+      padding: 16px;
+      border-radius: 20px;
+    }
+
+    .credentials-section h3 {
+      font-size: 14px;
+    }
+
+    .credential-item {
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .badge-icon {
+      width: 45px;
+      height: 45px;
+      font-size: 12px;
+    }
+
+    .credential-info h4 {
+      font-size: 12px;
+    }
+
+    .credential-info p {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .profile-container {
+      margin-top: 30px;
+    }
+
+    .coach-avatar {
+      width: 85px;
+      height: 85px;
+    }
+
+    .info-section h2 {
+      font-size: 18px;
+    }
+
+    .experience-badge {
+      font-size: 10px;
+      padding: 3px 8px;
+    }
+  }
 `;
 
 export default CoachProfile;

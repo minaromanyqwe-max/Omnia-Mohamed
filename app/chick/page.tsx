@@ -406,6 +406,79 @@ const StyledWrapper = styled.div`
     font-size: 11px;
     margin-top: 10px;
   }
+
+  @media (max-width: 600px) {
+    padding: 30px 16px;
+
+    .cards-wrapper {
+      gap: 20px;
+    }
+
+    .card-container,
+    .inter-card {
+      width: 100%;
+      max-width: 360px;
+    }
+
+    .title-card {
+      padding: 12px 16px;
+    }
+
+    .title-card p {
+      font-size: 13px;
+    }
+
+    .card-content {
+      padding: 20px 16px;
+      gap: 16px;
+    }
+
+    .title {
+      font-size: 22px;
+    }
+
+    .price-box h2 {
+      font-size: 24px;
+    }
+
+    .inter-card .price-box h2 {
+      font-size: 28px;
+    }
+
+    .option p,
+    .features-box p {
+      font-size: 12px;
+    }
+
+    .payments span {
+      font-size: 11px;
+      padding: 6px 10px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .card-container,
+    .inter-card {
+      max-width: 100%;
+    }
+
+    .title {
+      font-size: 20px;
+    }
+
+    .price-box h2 {
+      font-size: 20px;
+    }
+
+    .inter-card .price-box h2 {
+      font-size: 24px;
+    }
+
+    .card-btn {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
 `;
 
 export default CoachingCards;

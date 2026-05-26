@@ -215,6 +215,56 @@ const StyledWrapper = styled.div`
     color: #fff;
     font-weight: 700;
   }
+
+  @media (max-width: 600px) {
+    padding: 16px;
+
+    .features-container {
+      max-width: 100%;
+      gap: 24px;
+    }
+
+    .features-header h2 {
+      font-size: 18px;
+    }
+
+    .features-header .subtitle {
+      font-size: 12px;
+      padding: 5px 12px;
+    }
+
+    .feature-card {
+      padding: 16px;
+      gap: 14px;
+      border-radius: 20px;
+    }
+
+    .icon-wrapper {
+      font-size: 22px;
+      padding: 10px;
+      border-radius: 12px;
+    }
+
+    .card-content h3 {
+      font-size: 14px;
+    }
+
+    .card-content p {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .feature-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card-content p {
+      text-align: center;
+    }
+  }
 `;
 
 export default CoachFeatures;

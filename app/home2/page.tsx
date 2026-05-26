@@ -55,11 +55,11 @@ Omnia Mohamed
 
 const StyledWrapper = styled.section`
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: transparent;
   display: flex;
   align-items: center;
-  padding: 40px 20px;
-  font-family: sans-serif;
+  padding: 100px 20px 40px;
+  font-family: 'Cairo', sans-serif;
 
   .container {
     max-width: 1200px;
@@ -188,6 +188,7 @@ const StyledWrapper = styled.section`
     .container {
       flex-direction: column;
       text-align: center;
+      gap: 30px;
     }
 
     .right p {
@@ -203,9 +204,45 @@ const StyledWrapper = styled.section`
       font-size: 45px;
     }
 
+    .right h2 {
+      font-size: 24px;
+    }
+
     .left img {
-      width: 300px;
-      height: 300px;
+      width: 280px;
+      height: 280px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 80px 16px 30px;
+
+    .container {
+      gap: 20px;
+    }
+
+    .right h1 {
+      font-size: 32px;
+    }
+
+    .right h2 {
+      font-size: 20px;
+    }
+
+    .right span {
+      font-size: 16px;
+    }
+
+    .left img {
+      width: 220px;
+      height: 220px;
+      border-radius: 24px;
+    }
+
+    .socials a {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
     }
   }
 `;

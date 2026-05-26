@@ -105,14 +105,17 @@ export default function CustomerReviews() {
 const Section = styled.section`
   min-height: 100vh;
   padding: 80px 20px;
-  background:
-#161C2C;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
 
   font-family: "Cairo", sans-serif;
   direction: rtl;
+
+  @media (max-width: 600px) {
+    padding: 40px 16px;
+  }
 `;
 
 const Container = styled.div`
@@ -156,7 +159,11 @@ const Title = styled.h1`
   }
 
   @media(max-width:768px){
-    font-size: 36px;
+    font-size: 32px;
+  }
+
+  @media(max-width:480px){
+    font-size: 26px;
   }
 `;
 
@@ -172,6 +179,11 @@ const CardsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
   gap: 24px;
+
+  @media(max-width:480px){
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
 `;
 
 const ReviewCard = styled.div`
@@ -289,6 +301,18 @@ const StatCard = styled.div`
     margin-top: 10px;
     color: #94a3b8;
     font-size: 14px;
+  }
+
+  @media(max-width:480px){
+    padding: 20px;
+
+    h2{
+      font-size: 32px;
+    }
+
+    p{
+      font-size: 12px;
+    }
   }
 `;
 
